@@ -58,26 +58,26 @@ country_currency = st.sidebar.selectbox(
 )
 
 if country_currency == "Japan - JPY":
-    data = pd.read_csv(r"Monthly Data\Japan Monthly Data - Final.csv")
+    data = pd.read_csv(r"Monthly Data/Japan Monthly Data - Final.csv")
     currency_symbol = "¥"
     base_quote = "USD/JPY"
 elif country_currency == "Australia - AUD":
-    data = pd.read_csv(r"Monthly Data\Australia Monthly Data - Final.csv")
+    data = pd.read_csv(r"Monthly Data/Australia Monthly Data - Final.csv")
     currency_symbol = "A$"
     base_quote = "USD/AUD"
 
 elif country_currency == "Canada - CAD":
-    data = pd.read_csv(r"Monthly Data\Canada Monthly Data - Final.csv")
+    data = pd.read_csv(r"Monthly Data/Canada Monthly Data - Final.csv")
     currency_symbol = "C$"
     base_quote = "USD/CAD"
 
 elif country_currency == "United Kingdom - GBP":
-    data = pd.read_csv(r"Monthly Data\UK Monthly Data - Final.csv")
+    data = pd.read_csv(r"Monthly Data/UK Monthly Data - Final.csv")
     currency_symbol = "£"
     base_quote = "USD/GBP"    
 
 elif country_currency == "Eurozone - EUR":
-    data = pd.read_csv(r"Monthly Data\EU Monthly Data - Final.csv")
+    data = pd.read_csv(r"Monthly Data/EU Monthly Data - Final.csv")
     currency_symbol = "€"
     base_quote = "USD/EUR"
 
