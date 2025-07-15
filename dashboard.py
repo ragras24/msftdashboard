@@ -109,7 +109,7 @@ na_variables = filtered_data.columns[filtered_data.isna().any()].to_list()
 
 # Drop vraibles that have NA values (insufficient data)
 if na_variables:
-    st.warning(f"Dropping the following variables due to insifficient data: {', '.join(na_variables)}")
+    st.warning(f"Dropping the following variables due to missing/insufficient data: {', '.join(na_variables)}")
     filtered_data = filtered_data.drop(columns = na_variables)
 
 y_raw = filtered_data.iloc[:, 0]  # first column = fx_rate target
