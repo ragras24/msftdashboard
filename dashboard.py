@@ -49,7 +49,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------- SIDEBAR INPUTS ----------
-st.sidebar.image("D:\Raghav\Georgetown\microsoft_logo.png", use_container_width=True)
+st.sidebar.image("microsoft_logo.png", use_container_width=True)
 st.sidebar.title("⚙️ Model Configuration")
 
 country_currency = st.sidebar.selectbox(
